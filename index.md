@@ -34,13 +34,14 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
 
 ## 3. Comparison with Different Baseline Systems
 
-3.1.1 **Speaker**: <i><font size=4>M12</font></i> **Text**: <i><font size=4>Left</font></i>  **Original Speech**: <audio controls><source src="./data/M12/Original/M12-left.wav" type="audio/wav"></audio>
+3.1.1 **Text**: <i><font size=4>Left</font></i>
 
 <style> td, th {boeder: none!important;} </style>
 
 <table class="custom-table">
   <thead>
   <tr>
+    <th>Original</th>
     <th>FS2-DSR</th>
     <th>CoLM-DSR</th>
     <th>Diff-DSR</th>
@@ -48,6 +49,7 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
   </thead>
   <tbody>
   <tr>
+    <td><audio controls><source src="./data/M12/Original/M12-left.wav" type="audio/wav"></audio></td>
     <td><audio controls><source src="./data/M12/FS2-DSR/M12-left.wav" type="audio/wav"></audio></td>
     <td><audio controls><source src="./data/M12/CoLM-DSR/M12-left.wav" type="audio/wav"></audio></td>
     <td><audio controls><source src="./data/M12/Diff-DSR/M12-left.wav" type="audio/wav"></audio></td>
