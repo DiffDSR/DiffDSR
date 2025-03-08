@@ -9,7 +9,7 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
 
 ## 2. Proposed Model Architecture
 
-<img src="./data/model.png" width="100%">
+<img src="./data/model.png" width="90%">
 
 <style>
   .custom-table {
@@ -33,6 +33,12 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
 </style>
 
 ## 3. Comparison with Different Baseline Systems
+
+- **FS2-DSR**: It uses a speaker encoder to extract a global timbre embedding and a multi-speaker mel-based decoder.
+- **CoLM-DSR**: Excluding the influence of multi-modal input, it uses a LM-based generator with speech codec prompt.
+- **Diff-DSR**: Our complete proposed diffusion based system.
+
+### 3.1 Speaker: M12
 
 3.1.1 **Text**: <i><font size=4>Left</font></i>
 
@@ -71,98 +77,108 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
 | **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Watch.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Watch.wav" type="audio/wav"></audio> |
 
+
+### 3.2 Speaker: F02
+
 3.2.1 **Text**: <i><font size=4>Paragraph</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Paragraph.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Paragraph.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F02/Original/Paragraph.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F02/FS2-DSR/Paragraph.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Paragraph.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Paragraph.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F02/CoLM-DSR/Paragraph.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F02/Diff-DSR/Paragraph.wav" type="audio/wav"></audio> |
 
 3.2.2 **Text**: <i><font size=4>Word</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Word.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Word.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F02/Original/Word.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F02/FS2-DSR/Word.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Word.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Word.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F02/CoLM-DSR/Word.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F02/Diff-DSR/Word.wav" type="audio/wav"></audio> |
 
 3.2.3 **Text**: <i><font size=4>When</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/When.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/When.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F02/Original/When.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F02/FS2-DSR/When.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/When.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/When.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F02/CoLM-DSR/When.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F02/Diff-DSR/When.wav" type="audio/wav"></audio> |
 
 3.2.4 **Text**: <i><font size=4>Seven</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Seven.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Seven.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F02/Original/Seven.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F02/FS2-DSR/Seven.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Seven.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Seven.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F02/CoLM-DSR/Seven.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F02/Diff-DSR/Seven.wav" type="audio/wav"></audio> |
 
 3.2.5 **Text**: <i><font size=4>Foxtrot</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Foxtrot.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Foxtrot.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F02/Original/Foxtrot.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F02/FS2-DSR/Foxtrot.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Foxtrot.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Foxtrot.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F02/CoLM-DSR/Foxtrot.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F02/Diff-DSR/Foxtrot.wav" type="audio/wav"></audio> |
+
+### 3.3 Speaker: M16
 
 3.3.1 **Text**: <i><font size=4>Copy</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Copy.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Copy.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Copy.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Copy.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Copy.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Copy.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Copy.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Copy.wav" type="audio/wav"></audio> |
 
 3.3.2 **Text**: <i><font size=4>Bravo</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Bravo.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Bravo.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Bravo.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Bravo.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Bravo.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Bravo.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Bravo.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Bravo.wav" type="audio/wav"></audio> |
 
 3.3.3 **Text**: <i><font size=4>Kilo</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Kilo.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Kilo.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Kilo.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Kilo.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Kilo.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Kilo.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Kilo.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Kilo.wav" type="audio/wav"></audio> |
 
 3.3.4 **Text**: <i><font size=4>Oscar</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Oscar.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Oscar.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Oscar.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Oscar.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Oscar.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Oscar.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Oscar.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Oscar.wav" type="audio/wav"></audio> |
 
 3.3.5 **Text**: <i><font size=4>Tango</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Tango.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Tango.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Tango.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Tango.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Tango.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Tango.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Tango.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Tango.wav" type="audio/wav"></audio> |
 
 3.3.6 **Text**: <i><font size=4>Upward</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Upward.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Upward.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/M16/Original/Upward.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M16/FS2-DSR/Upward.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Upward.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Upward.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/M16/CoLM-DSR/Upward.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M16/Diff-DSR/Upward.wav" type="audio/wav"></audio> |
+
+
+### 3.4 Speaker: F04
 
 3.4.1 **Text**: <i><font size=4>Bulrush</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Bulrush.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Bulrush.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F04/Original/Bulrush.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F04/FS2-DSR/Bulrush.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Bulrush.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Bulrush.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F04/CoLM-DSR/Bulrush.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F04/Diff-DSR/Bulrush.wav" type="audio/wav"></audio> |
 
 3.4.2 **Text**: <i><font size=4>Juliet</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Juliet.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Juliet.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F04/Original/Juliet.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F04/FS2-DSR/Juliet.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Juliet.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Juliet.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F04/CoLM-DSR/Juliet.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F04/Diff-DSR/Juliet.wav" type="audio/wav"></audio> |
 
 3.4.3 **Text**: <i><font size=4>Quebec</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Quebec.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Quebec.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F04/Original/Quebec.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F04/FS2-DSR/Quebec.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Quebec.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Quebec.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F04/CoLM-DSR/Quebec.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F04/Diff-DSR/Quebec.wav" type="audio/wav"></audio> |
 
 3.4.4 **Text**: <i><font size=4>Uniform</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Uniform.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Uniform.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F04/Original/Uniform.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F04/FS2-DSR/Uniform.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Uniform.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Uniform.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F04/CoLM-DSR/Uniform.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F04/Diff-DSR/Uniform.wav" type="audio/wav"></audio> |
 
 3.4.5 **Text**: <i><font size=4>Victor</font></i>
 
-| **Original** | <audio controls><source src="./data/M12/Original/Victor.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/M12/FS2-DSR/Victor.wav" type="audio/wav"></audio> |
+| **Original** | <audio controls><source src="./data/F04/Original/Victor.wav" type="audio/wav"></audio> | **FS2-DSR** | <audio controls><source src="./data/F04/FS2-DSR/Victor.wav" type="audio/wav"></audio> |
 |:---------------------------------------:|:--------------------------------------:|:---------------------------------------:|:--------------------------------------:|
-| **CoLM-DSR** | <audio controls><source src="./data/M12/CoLM-DSR/Victor.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/M12/Diff-DSR/Victor.wav" type="audio/wav"></audio> |
+| **CoLM-DSR** | <audio controls><source src="./data/F04/CoLM-DSR/Victor.wav" type="audio/wav"></audio> | **Diff-DSR** | <audio controls><source src="./data/F04/Diff-DSR/Victor.wav" type="audio/wav"></audio> |
+
+
