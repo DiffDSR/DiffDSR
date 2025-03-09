@@ -59,10 +59,10 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
   </thead>
   <tbody>
     <tr>
-      <td><audio controls style="width: 25%;"><source src="./data/M12/Original/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls style="width: 25%;"><source src="./data/M12/FS2-DSR/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls style="width: 25%;"><source src="./data/M12/CoLM-DSR/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls style="width: 25%;"><source src="./data/M12/Diff-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 220px;"><source src="./data/M12/Original/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 220px;"><source src="./data/M12/FS2-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 220px;"><source src="./data/M12/CoLM-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 220px;"><source src="./data/M12/Diff-DSR/Left.wav" type="audio/wav"></audio></td>
     </tr>
   </tbody>
 </table>
