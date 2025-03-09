@@ -48,6 +48,20 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
   }
 </style>
 
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  td {
+    width: 25%; /* 每个单元格占据表格宽度的25%，以容纳4个音频播放器 */
+  }
+  audio {
+    width: 100%; /* 设置音频播放器的宽度为单元格的100% */
+    height: auto; /* 允许音频播放器的高度自适应以保持比例 */
+  }
+</style>
+
 <table class="custom-table">
   <thead>
     <tr>
