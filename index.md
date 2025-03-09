@@ -19,12 +19,17 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
     border-top: none;}
   .custom-table tr:first-child, .custom-table th:nth-child(2) {
     border-top: none;}
+  .custom-table tr:first-child, .custom-table th:nth-child(3) {
+    border-top: none;}
   .custom-table tr:first-child, .custom-table th:last-child {
     border-top: none;}
   .custom-table th:first-child, .custom-table td:first-child {
     border-left: none;
     border-right: none;}
   .custom-table th:nth-child(2), .custom-table td:nth-child(2) {
+    border-left: none;
+    border-right: none;}
+  .custom-table th:nth-child(3), .custom-table td:nth-child(3) {
     border-left: none;
     border-right: none;}
   .custom-table th:last-child, .custom-table td:last-child {
@@ -42,25 +47,6 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
 
 3.1.1 **Text**: <i><font size=4>Left</font></i>
 
-<style>
-  td, th {
-    border: none!important;
-  }
-</style>
-
-<style>
-  table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  td {
-    width: 25%; /* 每个单元格占据表格宽度的25%，以容纳4个音频播放器 */
-  }
-  audio {
-    width: 100%; /* 设置音频播放器的宽度为单元格的100% */
-    height: auto; /* 允许音频播放器的高度自适应以保持比例 */
-  }
-</style>
 
 <table class="custom-table">
   <thead>
@@ -73,10 +59,10 @@ Dysarthric speech reconstruction (DSR) aims to convert dysarthric speech into co
   </thead>
   <tbody>
     <tr>
-      <td><audio controls><source src="./data/M12/Original/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="./data/M12/FS2-DSR/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="./data/M12/CoLM-DSR/Left.wav" type="audio/wav"></audio></td>
-      <td><audio controls><source src="./data/M12/Diff-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 25%;"><source src="./data/M12/Original/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 25%;"><source src="./data/M12/FS2-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 25%;"><source src="./data/M12/CoLM-DSR/Left.wav" type="audio/wav"></audio></td>
+      <td><audio controls style="width: 25%;"><source src="./data/M12/Diff-DSR/Left.wav" type="audio/wav"></audio></td>
     </tr>
   </tbody>
 </table>
